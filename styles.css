@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 10px;
+}
+.contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#titulo {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+h1, h3 {
+    text-align: center; ;
+    color: #0aaad6;
+    margin-top: 0;
+}
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+#galeria img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #080000;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
