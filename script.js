@@ -5,12 +5,12 @@ function fetchDogs() {
     fetch(API_URL)
         .then(response => response.json())
         .then(data => {
-            const gallery = document.getElementById("galeria");
+            const galeria = document.getElementById("galeria");
             data.forEach(dog => {
                 const img = document.createElement("img");
                 img.src = dog.url;
                 img.alt = "Foto de perro";
-                gallery.appendChild(img);
+                galeria.appendChild(img);
             });
         })
         .catch(error => console.error("Error al cargar imágenes:", error));
